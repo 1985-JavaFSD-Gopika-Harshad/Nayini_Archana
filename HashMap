@@ -1,0 +1,30 @@
+package archana;
+
+import java.util.HashMap;
+
+public class HashMapMethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String,Integer> hm=new HashMap<>();
+		hm.put("Archana",1);
+		hm.put("Vamshii",2);
+		hm.put("Srinivas",3);
+		hm.put("Rama",4);
+		hm.put("Vamshii",5);
+		hm.put(null,5);
+		System.out.println(hm);
+		System.out.println(hm.get(2));
+		hm.remove(4);
+		System.out.println(hm.containsKey(2));
+		System.out.println(hm.containsValue("Rama"));
+		System.out.println(hm.size());
+		System.out.println(hm.isEmpty());
+		System.out.println(hm.keySet());
+		System.out.println(hm.entrySet());
+		System.out.println(hm.values());
+		hm.clear();
+		System.out.println(hm);
+	}
+
+}
