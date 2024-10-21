@@ -1,0 +1,23 @@
+package archana;
+
+public class Container<T> {
+	private T object;
+	public void setObject(T object) {
+		this.object=object;
+	}
+	public T getObject() {
+		return object;
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Container<Integer> incon=new Container<>();
+		incon.setObject(362);
+		System.out.println(incon.getObject());
+		incon.setObject(635);
+		System.out.println(incon.getObject());
+
+	}
+
+}
